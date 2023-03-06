@@ -8,24 +8,28 @@ Molim vas izmijenite ovaj dokument kako biste u njemu naveli naziv i kratak opis
 A sada, vrijeme je za prvi korak rada na vašem projektu. 🙂 Za upis/opis vašeg programskog proizvoda molimo vas koristite **predložak** koji je naveden u nastavku. Započnite tako da kliknete na *olovku* u desnom gornjem kutu ovoga dokumenta te izbrišite sve što je iznad _Naziva projekta_, kao i sve upute koje su navedene u zagradama u predlošku ispod.
 
 # Naziv projekta
-(U redak iznad navedite naziv projekta koji ste dobili za analizu!)
-
+Praćenje potrošnje energije javnih zgrada
 ## Podaci o studentu
 (Ispod promijenite samo drugi redak tablice!)
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
+Darijo Bracic | dbracic21@student.foi.hr | 81013579597 | dbracic21-foi
 
 
 ## Opis domene
-(Vlastitim riječima opišite domenu ili problem koji pokriva projekt vaše zadaće!)
+Cilj domne je uvođenje sustava praćenja kvalitete i kvantiteta energetske opskrba
+energetske potrošnje i pokazatelja na području grada.
+
 
 ## Specifikacija projekta
-(Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
+Zahtjevi su :
+ zahtjev u domeni prikaza dohvaćenih podataka,zahtjev u domeni unosa podataka,zahtjev u domeni izrade izvještaja
+  zahtjev u domeni prikaza statističkih podataka
+ 
 
 ## Zadatak
-(U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)
+(https://github.com/foivz/pi2023-zadace-dariob1/blob/master/Korisni%C4%8Dki%20zahtjevi%20-%20nadgledanje%20potro%C5%A1nje%20energije%20javnih%20zgrada.pdf)
 
 ## Resursi
 (Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete koristiti na wiki stranicama smjestite u mapu dokumentacije u repozitoriju!)
