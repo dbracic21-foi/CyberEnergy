@@ -1,0 +1,11 @@
+C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\bin\Debug\CyberEnergy.exe.config
+C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\bin\Debug\CyberEnergy.exe
+C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\bin\Debug\CyberEnergy.pdb
+C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.csproj.AssemblyReference.cache
+C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.csproj.SuggestedBindingRedirects.cache
+C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.FrmLogin.resources
+C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.Properties.Resources.resources
+C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.csproj.GenerateResource.cache
+C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.csproj.CoreCompileInputs.cache
+C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.exe
+C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.pdb
