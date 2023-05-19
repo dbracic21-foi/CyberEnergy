@@ -1,6 +1,6 @@
 ﻿namespace CyberEnergy
 {
-    partial class frmPodaci
+    partial class frmPregledPodataka
     {
         /// <summary>
         /// Required designer variable.

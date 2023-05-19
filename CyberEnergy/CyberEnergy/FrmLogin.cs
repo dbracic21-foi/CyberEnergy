@@ -53,7 +53,7 @@ namespace CyberEnergy
             }
             if (txtUsername.Text == username && txtPassword.Text ==password)
             {
-                frmPodaci frmPodaci = new frmPodaci();
+                frmPregledPodataka frmPodaci = new frmPregledPodataka();
                 frmPodaci.ShowDialog();
             }
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CyberEnergy
 {
-    public partial class frmPodaci : Form
+    public partial class frmPregledPodataka : Form
     {
-        public frmPodaci()
+        public frmPregledPodataka()
         {
             InitializeComponent();
         }
