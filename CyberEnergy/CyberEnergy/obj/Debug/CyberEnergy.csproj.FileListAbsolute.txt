@@ -21,4 +21,4 @@ C:\Users\bario\source\repos\CyberEnergy\clone\CyberEnergy\CyberEnergy\obj\Debug\
 C:\Users\bario\source\repos\CyberEnergy\clone\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.pdb
 C:\Users\bario\source\repos\CyberEnergy\clone\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.frmLogin.resources
 C:\Users\bario\source\repos\CyberEnergy\clone\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.frmPodaci.resources
-C:\Users\bario\Source\Repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.frmPodaci.resources
+C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.frmPregledPodataka.resources

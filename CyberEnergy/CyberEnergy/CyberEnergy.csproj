@@ -93,7 +93,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Dlls\" />
+    <ProjectReference Include="..\DBLayer\DBLayer.csproj">
+      <Project>{75940346-4d42-4d8d-a234-10faef4326a3}</Project>
+      <Name>DBLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
