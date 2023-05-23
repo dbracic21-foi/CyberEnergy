@@ -23,5 +23,4 @@ C:\Users\bario\source\repos\CyberEnergy\clone\CyberEnergy\CyberEnergy\obj\Debug\
 C:\Users\bario\source\repos\CyberEnergy\clone\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.frmPodaci.resources
 C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.frmPregledPodataka.resources
 C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\bin\Debug\DBLayer.dll
-C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\bin\Debug\DBLayer.pdb
 C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.csproj.CopyComplete

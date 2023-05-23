@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DBLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\OneDrive\Desktop\DBLayer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -62,8 +66,10 @@
     <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Models\Upravitelj_Objekta.cs" />
+    <Compile Include="Models\Zgrade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\repositoryAdministrator.cs" />
+    <Compile Include="Repository\repositoryZgrade.cs" />
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,12 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DBLayer\DBLayer.csproj">
-      <Project>{75940346-4d42-4d8d-a234-10faef4326a3}</Project>
-      <Name>DBLayer</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

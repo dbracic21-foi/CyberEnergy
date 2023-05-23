@@ -30,7 +30,7 @@ namespace CyberEnergy.Repository
         public static List<Administrator> GetAdministrators()
         {
             List<Administrator> administrators = new List<Administrator>();
-            string sql = "SELECT * FROM Administrator";
+            string sql = "SELECT * FROM Students";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             while(reader.Read( )) { 
@@ -46,8 +46,8 @@ namespace CyberEnergy.Repository
         }
         private static Administrator CreateObject(SqlDataReader reader)
         {
-            int id = int.Parse(reader["Id_Administratora"].ToString());
-            string Ime = reader["Ime"].ToString();
+           
+            string Ime = reader["Ime"].ToString(); int id = int.Parse(reader["Id_Administratora"].ToString());
             string Prezime = reader["Prezime"].ToString() ;
 
             var Administrator = new Administrator

@@ -43,7 +43,7 @@ namespace CyberEnergy
         private void ShowAdministrators()
         {
             List<Administrator> administrators = repositoryAdministrator.GetAdministrators();
-            
+            cmbAdministrator.DataSource = administrators;
         }
 
         private void frmPregledPodataka_Load(object sender, EventArgs e)

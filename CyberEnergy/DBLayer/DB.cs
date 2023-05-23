@@ -10,8 +10,7 @@ namespace DBLayer
     public static class DB
     {
 
-        private static string _connectionString = @"Data
-Source=31.147.204.119\PISERVER,1433; Initial Catalog=CyberEnergy;
+        private static string _connectionString = @"Data Source=31.147.204.119\PISERVER,1433; Initial Catalog=CyberEnergy;
 User=dbracic21; Password=oOe!?=TA";
         private static SqlConnection _connection;
 
@@ -38,5 +37,9 @@ User=dbracic21; Password=oOe!?=TA";
             return command.ExecuteNonQuery();
         }
 
+        public static void SetConfiguration(string v1, string v2, string v3)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
