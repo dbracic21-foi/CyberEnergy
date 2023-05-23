@@ -63,7 +63,7 @@
     <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Models\Upravitelj_Objekta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\repositoryZgrada.cs" />
+    <Compile Include="Repository\repositoryAdministrator.cs" />
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>

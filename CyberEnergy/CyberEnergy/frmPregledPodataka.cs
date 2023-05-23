@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DBLayer;
+using System.Data.SqlClient;
+using CyberEnergy.Models;
+using CyberEnergy.Repository;
 
 namespace CyberEnergy
 {
@@ -30,6 +34,21 @@ namespace CyberEnergy
         private void button1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+        }
+        private void ShowAdministrators()
+        {
+            List<Administrator> administrators = repositoryAdministrator.GetAdministrators();
+            
+        }
+
+        private void frmPregledPodataka_Load(object sender, EventArgs e)
+        {
+            ShowAdministrators();
         }
     }
 }
