@@ -37,7 +37,7 @@ namespace CyberEnergy.Repository
             while (reader.Read())
             {
                 Zgrade zgrade = CreateObject(reader);
-                zgrade.Add();
+              //  zgrade.Add();
 
             }
             reader.Close();

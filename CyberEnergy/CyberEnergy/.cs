@@ -15,10 +15,12 @@ namespace CyberEnergy
         [STAThread]
         static void Main()
         {
+            DB.SetConfiguration(" PI2023_IPS23_dbracic21", "dbracic21", " oOe!?=TA");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmLogin());
-            DB.SetConfiguration("PI2023_IPS23_dbracic21", "dbracic21", " oOe!?=TA");
+            Application.Run(new frmPregledPodataka());
+          
 
         }
     }

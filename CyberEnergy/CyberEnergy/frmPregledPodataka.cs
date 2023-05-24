@@ -50,5 +50,11 @@ namespace CyberEnergy
         {
             ShowAdministrators();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmUnosPodataka frmUnos = new frmUnosPodataka();
+            frmUnos.ShowDialog();
+        }
     }
 }

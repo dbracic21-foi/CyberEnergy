@@ -70,11 +70,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\repositoryAdministrator.cs" />
     <Compile Include="Repository\repositoryZgrade.cs" />
+    <Compile Include="frmUnosPodataka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnosPodataka.Designer.cs">
+      <DependentUpon>frmUnosPodataka.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPregledPodataka.resx">
       <DependentUpon>frmPregledPodataka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnosPodataka.resx">
+      <DependentUpon>frmUnosPodataka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
