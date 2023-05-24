@@ -30,7 +30,7 @@ namespace CyberEnergy.Repository
         public static List<Administrator> GetAdministrators()
         {
             List<Administrator> administrators = new List<Administrator>();
-            string sql = $"SELECT * FROM Administrator";
+            string sql = "SELECT * FROM  [dbo].[Administrator]";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             while(reader.Read( )) { 

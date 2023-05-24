@@ -56,5 +56,10 @@ namespace CyberEnergy
             frmUnosPodataka frmUnos = new frmUnosPodataka();
             frmUnos.ShowDialog();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
