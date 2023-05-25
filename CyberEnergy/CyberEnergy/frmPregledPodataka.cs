@@ -16,6 +16,8 @@ namespace CyberEnergy
 {
     public partial class frmPregledPodataka : Form
     {
+        public Administrator PrijavljeniAdministrator { get; set; }
+        public Upravitelj_Zgrade PrijavljeniUpravitelj { get; set; }
         public frmPregledPodataka()
         {
             InitializeComponent();
@@ -38,7 +40,7 @@ namespace CyberEnergy
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
+            
         }
         private void ShowAdministrators()
         {

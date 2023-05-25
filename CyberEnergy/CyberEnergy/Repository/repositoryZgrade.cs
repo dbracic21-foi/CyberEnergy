@@ -11,6 +11,8 @@ namespace CyberEnergy.Repository
 {
     public class repositoryZgrade
     {
+         
+        
         public static Zgrade GetZgrade(int id)
         {
             Zgrade zgrade = null;
@@ -28,10 +30,12 @@ namespace CyberEnergy.Repository
             return zgrade;
 
         }
+        
         public static List<Zgrade> GetZgrade()
         {
             List<Zgrade> Zgrade = new List<Zgrade>();
             string sql = $"SELECT * FROM [dbo].[Zgrade]";
+            
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             while (reader.Read())
@@ -46,6 +50,30 @@ namespace CyberEnergy.Repository
             return Zgrade;
 
         }
+        public static List<Zgrade> GetZgrade(Korisnik PrijavljeniKorisnik)
+        {
+            List<Zgrade> OdabraneZgrade = new List<Zgrade>();
+            string sql = $"SELECT * FROM [dbo].[Zgrade]";
+            if (PrijavljeniKorisnik is Upravitelj_Zgrade)
+            {
+                Upravitelj_Zgrade upravitelj = (Upravitelj_Zgrade)PrijavljeniKorisnik;
+                sql += "WHERE Id_Upravitelja = {Id_Upravitelja}";
+            }
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Zgrade zgrade = CreateObject(reader);
+                OdabraneZgrade.Add(zgrade);
+
+            }
+            reader.Close();
+            DB.CloseConnection();
+
+            return OdabraneZgrade;
+
+        }
+
         private static Zgrade CreateObject(SqlDataReader reader)
         {
             int Id_Zgrade = int.Parse(reader["Id_Zgrade"].ToString());

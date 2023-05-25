@@ -7,9 +7,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace CyberEnergy.Models
 {
-    public class Administrator : Korisnik
+    public class Upravitelj_Zgrade:Korisnik
     {
-        public int Id_Administratora { get; set; }
+
+        public int Id_Upravitelja { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
 
