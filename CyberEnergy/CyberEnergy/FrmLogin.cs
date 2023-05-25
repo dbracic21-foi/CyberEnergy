@@ -14,6 +14,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace CyberEnergy
 {
+    /*
     public partial class frmLogin : Form
     {
         /*
@@ -106,7 +107,9 @@ namespace CyberEnergy
 
         }
     }
-*/
-}
 
+
+}
+*/
+//}
         
