@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CyberEnergy.Models;
+using CyberEnergy.Repository;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,8 +15,9 @@ namespace CyberEnergy
 {
     public partial class frmLogin : Form
     {
-        string username = "covjek";
-        string password = "ljudina";
+        public static Administrator LoggedAdministrator {  get; set; }
+        //string username = "covjek";
+        //string password = "ljudina";
         public frmLogin()
         {
             InitializeComponent();
@@ -40,7 +43,9 @@ namespace CyberEnergy
             }
             else
             {
-                if (txtUsername.Text == username && txtPassword.Text == password)
+                LoggedAdministrator = repositoryAdministrator.GetAdministrator(txtUsername.Text);
+                if (LoggedAdministrator != null && LoggedAdministrator.Password == txtPassword.Text)
+                //if (txtUsername.Text == username && txtPassword.Text == password)
                 {
                     MessageBox.Show("Dobrodošli!", "Prijavljeni ste",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -51,7 +56,9 @@ namespace CyberEnergy
                     MessageBoxIcon.Error);
                 }
             }
-            if (txtUsername.Text == username && txtPassword.Text ==password)
+
+            LoggedAdministrator = repositoryAdministrator.GetAdministrator(txtUsername.Text);
+            if (LoggedAdministrator != null && LoggedAdministrator.Password == txtPassword.Text) ;
             {
                 frmPregledPodataka frmPodaci = new frmPregledPodataka();
                 frmPodaci.ShowDialog();

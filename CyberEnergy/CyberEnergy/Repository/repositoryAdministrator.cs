@@ -11,50 +11,46 @@ namespace CyberEnergy.Repository
 {
     public class repositoryAdministrator
     {
+        public static Administrator GetAdministrator(string UserName)
+        {
+            string sql = $"SELECT * FROM Administrator WHERE UserName ='{UserName}'";
+            return FetchAdministrator(sql);
+
+        }
         public static Administrator GetAdministrator(int id)
         {
-            Administrator administrator = null;
+          
             string sql = $"SELECT * FROM Administrator WHERE Id_Administratora ={id}";
+            return FetchAdministrator(sql);
+
+        }
+        public static Administrator FetchAdministrator(string sql) 
+        {
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
-            if(reader.HasRows ) { 
-            reader.Read();
-            administrator = CreateObject(reader);
-            reader.Close();
-                    
+            Administrator administrator = null;
+            if(reader.HasRows == true)
+            {
+                reader.Read();
+                administrator = CreateObject(reader);
+                reader.Close();
             }
             DB.CloseConnection();
             return administrator;
-
-        }
-        public static List<Administrator> GetAdministrators()
-        {
-            List<Administrator> administrators = new List<Administrator>();
-            string sql = "SELECT * FROM  [dbo].[Administrator]";
-            DB.OpenConnection();
-            var reader = DB.GetDataReader(sql);
-            while(reader.Read( )) { 
-            Administrator administrator = CreateObject(reader);
-            administrators.Add(administrator);
-
-            }
-            reader.Close();
-            DB.CloseConnection( );
-
-            return administrators;
+            
 
         }
         private static Administrator CreateObject(SqlDataReader reader)
         {
             int id= int.Parse(reader["Id_Administratora"].ToString());
-            string Ime = reader["Ime"].ToString();
-            string Prezime = reader["Prezime"].ToString() ;
+            string UserName = reader["UserName"].ToString();
+            string Password = reader["Password"].ToString() ;
 
             var Administrator = new Administrator
             {
                 Id_Administratora = id,
-                Ime = Ime,
-                Prezime = Prezime
+                UserName = UserName,
+                Password = Password
 
             };
             return Administrator;

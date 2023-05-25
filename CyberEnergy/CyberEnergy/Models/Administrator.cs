@@ -10,7 +10,7 @@ namespace CyberEnergy.Models
     public class Administrator : Korisnik
     {
         public int Id_Administratora { get; set; }
-        public string Usename { get; set; }
+        public string UserName { get; set; }
         public string Password { get; set; }
 
        
