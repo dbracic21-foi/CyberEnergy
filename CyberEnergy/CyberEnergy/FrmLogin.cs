@@ -14,13 +14,11 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace CyberEnergy
 {
-    /*
+
     public partial class frmLogin : Form
     {
-        /*
-        public static Administrator LoggedAdministrator { get; set; }
-        public static Upravitelj_Zgrade LoggedUpravitelj { get; set; }
-        public Korisnik PrijavljeniKorisnik { get;  set; }
+
+        public static Korisnik LoggedKorisnik {get;set;}
         //string username = "covjek";
         //string password = "ljudina";
         public frmLogin()
@@ -48,9 +46,9 @@ namespace CyberEnergy
             }
             else
             {
-                LoggedUpravitelj = repositoryUpraviteljZgrade.GetUpraviteljZgrade(txtUsername.Text);
-                LoggedAdministrator = repositoryAdministrator.GetAdministrator(txtUsername.Text);
-                if (LoggedAdministrator != null && LoggedAdministrator.CheckPassword(txtPassword.Text) || LoggedUpravitelj != null && LoggedUpravitelj.CheckPassword(txtPassword.Text))
+                LoggedKorisnik = RepositoryKorisnika.GetKorisnik(txtUsername.Text);
+                if (LoggedKorisnik != null && LoggedKorisnik.CheckPassword(txtPassword.Text))
+                
                 //if (txtUsername.Text == username && txtPassword.Text == password)
                 
                   
@@ -68,28 +66,15 @@ namespace CyberEnergy
                 }
 
             }
-            LoggedUpravitelj = repositoryUpraviteljZgrade.GetUpraviteljZgrade(txtUsername.Text);
-            LoggedAdministrator = repositoryAdministrator.GetAdministrator(txtUsername.Text);
-            if (LoggedAdministrator != null && LoggedAdministrator.CheckPassword(txtPassword.Text)|| LoggedUpravitelj != null && LoggedUpravitelj.CheckPassword(txtPassword.Text))
-            {
+           
+            
+                LoggedKorisnik = RepositoryKorisnika.GetKorisnik(txtUsername.Text);
+                if (LoggedKorisnik != null && LoggedKorisnik.CheckPassword(txtPassword.Text))
 
+            { 
 
-                
                     frmPregledPodataka frmPodaci = new frmPregledPodataka();
-                if (LoggedAdministrator != null)
-                {
-                    frmPodaci.PrijavljeniAdministrator = LoggedAdministrator;
-                    PrijavljeniKorisnik = LoggedAdministrator;
-                    MessageBox.Show("Prijavljen administrator");
-                }
-                else if (LoggedUpravitelj != null)
-                {
-                    frmPodaci.PrijavljeniUpravitelj = LoggedUpravitelj;
-                    PrijavljeniKorisnik = LoggedUpravitelj;
-                    MessageBox.Show("Prijavljen upravitelj");
-                }
-
-               
+           
                 frmPodaci.ShowDialog();
 
             }
@@ -110,6 +95,6 @@ namespace CyberEnergy
 
 
 }
-*/
-//}
+
+
         

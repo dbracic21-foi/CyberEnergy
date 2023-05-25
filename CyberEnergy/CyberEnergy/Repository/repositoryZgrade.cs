@@ -50,29 +50,7 @@ namespace CyberEnergy.Repository
             return Zgrade;
 
         }
-        public static List<Zgrade> GetZgrade(Korisnik PrijavljeniKorisnik)
-        {
-            List<Zgrade> OdabraneZgrade = new List<Zgrade>();
-            string sql = $"SELECT * FROM [dbo].[Zgrade]";
-            if (PrijavljeniKorisnik is Upravitelj_Zgrade)
-            {
-                Upravitelj_Zgrade upravitelj = (Upravitelj_Zgrade)PrijavljeniKorisnik;
-                sql += "WHERE Id_Upravitelja = {Id_Upravitelja}";
-            }
-            DB.OpenConnection();
-            var reader = DB.GetDataReader(sql);
-            while (reader.Read())
-            {
-                Zgrade zgrade = CreateObject(reader);
-                OdabraneZgrade.Add(zgrade);
-
-            }
-            reader.Close();
-            DB.CloseConnection();
-
-            return OdabraneZgrade;
-
-        }
+      
 
         private static Zgrade CreateObject(SqlDataReader reader)
         {

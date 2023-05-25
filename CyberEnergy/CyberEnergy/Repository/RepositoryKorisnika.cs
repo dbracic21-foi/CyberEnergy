@@ -16,9 +16,9 @@ namespace CyberEnergy.Repository
             string sql = $"SELECT * FROM Korisnik WHERE Username = '{Username}'";
             return FetchKorisnik(sql);
         }
-        public static Korisnik GetKorisnik(string id)
+        public static Korisnik GetKorisnik(int id)
         {
-            string sql = $"SELECT * FROM Korisnik WHERE Id = '{id}'";
+            string sql = $"SELECT * FROM Korisnik WHERE Id_Korisnika = '{id}'";
             return FetchKorisnik(sql);
         }
         private static Korisnik FetchKorisnik (string sql) {
@@ -34,7 +34,7 @@ namespace CyberEnergy.Repository
             DB.CloseConnection();
             return korisnik;
         }
-        private static Korisnik Createobject(SqlDataReader reader)
+        private static Korisnik CreateObject(SqlDataReader reader)
         {
             int Id_Korisnika = int.Parse(reader["Id_Korisnika"].ToString());
             string Ime = reader["Ime"].ToString();
