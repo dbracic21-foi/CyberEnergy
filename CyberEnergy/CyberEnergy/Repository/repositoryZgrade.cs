@@ -31,13 +31,13 @@ namespace CyberEnergy.Repository
         public static List<Zgrade> GetZgrade()
         {
             List<Zgrade> Zgrade = new List<Zgrade>();
-            string sql = $"SELECT * FROM Zgrade";
+            string sql = $"SELECT * FROM [dbo].[Zgrade]";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             while (reader.Read())
             {
                 Zgrade zgrade = CreateObject(reader);
-              //  zgrade.Add();
+                Zgrade.Add(zgrade);
 
             }
             reader.Close();
@@ -49,13 +49,13 @@ namespace CyberEnergy.Repository
         private static Zgrade CreateObject(SqlDataReader reader)
         {
             int Id_Zgrade = int.Parse(reader["Id_Zgrade"].ToString());
-            string Naziv = reader["Naziv"].ToString();
+            string Naziv = reader["Naziv_Zgrade"].ToString();
 
 
             var Zgrade = new Zgrade
             {
                 Id_Zgrade = Id_Zgrade,
-                Naziv = Naziv,
+                Naziv_Zgrade = Naziv,
 
 
             };

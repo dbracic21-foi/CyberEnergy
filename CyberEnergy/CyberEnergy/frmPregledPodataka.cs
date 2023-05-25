@@ -42,9 +42,15 @@ namespace CyberEnergy
         }
         private void ShowAdministrators()
         {
+            /*
             List<Administrator> administrators = repositoryAdministrator.GetAdministrators();
             cmbAdministrator.DataSource = administrators;
-        }
+        */
+            List<Zgrade> zgrade = repositoryZgrade.GetZgrade();
+            cmbAdministrator.DataSource = zgrade;
+            }
+
+
 
         private void frmPregledPodataka_Load(object sender, EventArgs e)
         {
