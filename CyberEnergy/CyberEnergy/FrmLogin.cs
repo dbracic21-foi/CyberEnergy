@@ -16,6 +16,7 @@ namespace CyberEnergy
 {
     public partial class frmLogin : Form
     {
+        /*
         public static Administrator LoggedAdministrator { get; set; }
         public static Upravitelj_Zgrade LoggedUpravitelj { get; set; }
         public Korisnik PrijavljeniKorisnik { get;  set; }
@@ -105,4 +106,7 @@ namespace CyberEnergy
 
         }
     }
+*/
 }
+
+        
