@@ -28,6 +28,7 @@ namespace CyberEnergy
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            showKorisnici();
 
         }
 
@@ -90,6 +91,16 @@ namespace CyberEnergy
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+        private void showKorisnici()
+        {
+            List<Uloga> uloge = RepositoryUloge.GetUloge();
+            cmbKorisnici.DataSource = uloge;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+      
         }
     }
 

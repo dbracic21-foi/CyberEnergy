@@ -45,7 +45,7 @@
             // cmbAdministrator
             // 
             this.cmbAdministrator.FormattingEnabled = true;
-            this.cmbAdministrator.Location = new System.Drawing.Point(45, 49);
+            this.cmbAdministrator.Location = new System.Drawing.Point(57, 46);
             this.cmbAdministrator.Name = "cmbAdministrator";
             this.cmbAdministrator.Size = new System.Drawing.Size(216, 21);
             this.cmbAdministrator.TabIndex = 0;

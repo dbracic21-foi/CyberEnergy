@@ -33,12 +33,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.cmbKorisnici = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 46);
+            this.label1.Location = new System.Drawing.Point(144, 121);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 0;
@@ -47,7 +49,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 124);
+            this.label2.Location = new System.Drawing.Point(144, 199);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 1;
@@ -56,7 +58,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(28, 176);
+            this.button1.Location = new System.Drawing.Point(147, 251);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -66,24 +68,44 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(28, 62);
+            this.txtUsername.Location = new System.Drawing.Point(147, 137);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(100, 20);
             this.txtUsername.TabIndex = 3;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(28, 140);
+            this.txtPassword.Location = new System.Drawing.Point(147, 215);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
             this.txtPassword.TabIndex = 4;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
+            // cmbKorisnici
+            // 
+            this.cmbKorisnici.FormattingEnabled = true;
+            this.cmbKorisnici.Location = new System.Drawing.Point(147, 70);
+            this.cmbKorisnici.Name = "cmbKorisnici";
+            this.cmbKorisnici.Size = new System.Drawing.Size(121, 21);
+            this.cmbKorisnici.TabIndex = 5;
+            this.cmbKorisnici.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(144, 54);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Uloge:";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 270);
+            this.ClientSize = new System.Drawing.Size(445, 342);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cmbKorisnici);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.button1);
@@ -107,5 +129,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.ComboBox cmbKorisnici;
+        private System.Windows.Forms.Label label3;
     }
 }
