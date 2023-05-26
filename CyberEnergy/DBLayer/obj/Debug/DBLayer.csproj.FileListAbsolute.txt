@@ -1,6 +1,0 @@
-C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\DBLayer\bin\Debug\DBLayer.dll
-C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\DBLayer\bin\Debug\DBLayer.pdb
-C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\DBLayer\obj\Debug\DBLayer.csproj.AssemblyReference.cache
-C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\DBLayer\obj\Debug\DBLayer.csproj.CoreCompileInputs.cache
-C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\DBLayer\obj\Debug\DBLayer.dll
-C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\DBLayer\obj\Debug\DBLayer.pdb
