@@ -63,9 +63,14 @@
     <Compile Include="frmPregledPodataka.Designer.cs">
       <DependentUpon>frmPregledPodataka.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Zgrade.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\RepositoryKorisnika.cs" />
+    <Compile Include="Repository\RepositoryZgrade.cs" />
+    <EmbeddedResource Include="frmPregledPodataka.resx">
+      <DependentUpon>frmPregledPodataka.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrijava.resx">
       <DependentUpon>frmPrijava.cs</DependentUpon>
     </EmbeddedResource>
