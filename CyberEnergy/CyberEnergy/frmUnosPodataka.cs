@@ -19,10 +19,7 @@ namespace CyberEnergy
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+      
         private void ShowZgrade()
         {
 
@@ -48,7 +45,7 @@ namespace CyberEnergy
             ShowEnergije();
 
         }
-
+       
         private void btnOdustani_Click(object sender, EventArgs e)
         {
             Close();
@@ -66,6 +63,20 @@ namespace CyberEnergy
 
         private void label7_Click(object sender, EventArgs e)
         {
+
+        }
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnSpremi_Click(object sender, EventArgs e)
+        {
+          var mjernajedinica = cmbMjerna.SelectedItem as MjernaJedinica;
+            var zgrade = cmbZgrade.SelectedItem as Zgrade;
+            var vrstaenergije = cmbVrste.SelectedItem as VrstaEnergije;
+            var korisnik = frmPrijava.LoggedKorisnik;
+            korisnik.PerformUnos(korisnik, zgrade, mjernajedinica, vrstaenergije);
 
         }
     }

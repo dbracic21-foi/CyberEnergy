@@ -14,7 +14,7 @@ namespace CyberEnergy.Repository
         public static VrstaEnergije GetEnergija(int id)
         {
             VrstaEnergije vrstaenergije = null;
-            string sql = $"SELECT * FROM NazivPotrosnje WHERE Id_VrstaPotrosnje ={id}";
+            string sql = $"SELECT * FROM NazivPotrosnje WHERE Id_VrstePotrosnje ={id}";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             if (reader.HasRows)

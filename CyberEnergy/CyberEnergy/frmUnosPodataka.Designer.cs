@@ -74,6 +74,7 @@
             this.btnSpremi.TabIndex = 2;
             this.btnSpremi.Text = "Spremi";
             this.btnSpremi.UseVisualStyleBackColor = true;
+            this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
             // 
             // label1
             // 

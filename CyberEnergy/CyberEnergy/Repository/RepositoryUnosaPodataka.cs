@@ -50,8 +50,8 @@ namespace CyberEnergy.Repository
             int Id_Korisnika = int.Parse(reader["Id_Korisnika"].ToString());
             var korisnik = RepositoryKorisnika.GetKorisnik(Id_Korisnika);
 
-            int  Id_MjeneJedinice = int.Parse(reader["Id_MjerneJedinice"].ToString());
-            var mjernajedinica = RepositoryMjerneJedinice.GetMjernaJedinica(Id_MjeneJedinice);
+            int  Id_MjerneJedinice = int.Parse(reader["Id_MjerneJedinice"].ToString());
+            var mjernajedinica = RepositoryMjerneJedinice.GetMjernaJedinica(Id_MjerneJedinice);
 
             int Id_VrstePotrosnje = int.Parse(reader["Id_VrstePotrosnje"].ToString());
             var NazivPotrosnje = RepositoryVrstaEnergije.GetEnergija(Id_VrstePotrosnje);
@@ -67,6 +67,13 @@ namespace CyberEnergy.Repository
             return unospodataka;
 
 
+        }
+        public static void InsertUnosa(Korisnik korisnik, Zgrade zgrade,MjernaJedinica mjernajedinica, VrstaEnergije vrstaenergije)
+        {
+            string sql = $"INSERT INTO UnosPodataka (Id_Zgrade,Id_MjerneJedinice,Id_VrstePotrosnje) VALUES ({zgrade.Id_Zgrade},{mjernajedinica.Id_MjerneJedinice},{vrstaenergije.Id_VrstePotrosnje})";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
         }
     }
 }
