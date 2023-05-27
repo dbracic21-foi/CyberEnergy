@@ -33,12 +33,19 @@ namespace CyberEnergy
         {
 
             List<VrstaEnergije> vrstaenergije = RepositoryVrstaEnergije.GetEnergija();
-            cmbMjerna.DataSource = vrstaenergije;
+            cmbVrste.DataSource = vrstaenergije;
+        }
+        private void ShowEnergije()
+        {
+
+            List<MjernaJedinica> mjernajedinica = RepositoryMjerneJedinice.GetMjernaJedinica();
+            cmbMjerna.DataSource = mjernajedinica;
         }
         private void UnosPodataka_Load(object sender, EventArgs e)
         {
             ShowZgrade();
             ShowMjerna();
+            ShowEnergije();
 
         }
 
@@ -48,6 +55,16 @@ namespace CyberEnergy
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }

@@ -8,12 +8,12 @@ namespace CyberEnergy.Models
 {
     public class MjernaJedinica
     {
-        public int Id_VrstePotrosnje { get; set; }
-        public string NazivPotrosnje { get; set; }
+        public int Id_MjerneJedinice { get; set; }
+        public string Naziv_Mjerne_Jedinice { get; set; }
 
         public override string ToString()
         {
-            return NazivPotrosnje;
+            return Naziv_Mjerne_Jedinice;
         }
     }
 }

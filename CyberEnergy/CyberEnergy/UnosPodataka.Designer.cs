@@ -40,8 +40,10 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cmbMjerna = new System.Windows.Forms.ComboBox();
+            this.cmbVrste = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.cmbMjerna = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -134,7 +136,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(359, 59);
+            this.textBox2.Location = new System.Drawing.Point(276, 59);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 10;
@@ -142,29 +144,48 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(359, 42);
+            this.label5.Location = new System.Drawing.Point(276, 42);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 13);
             this.label5.TabIndex = 11;
             this.label5.Text = "Unesite količinu";
             // 
-            // cmbMjerna
+            // cmbVrste
             // 
-            this.cmbMjerna.FormattingEnabled = true;
-            this.cmbMjerna.Location = new System.Drawing.Point(525, 58);
-            this.cmbMjerna.Name = "cmbMjerna";
-            this.cmbMjerna.Size = new System.Drawing.Size(121, 21);
-            this.cmbMjerna.TabIndex = 12;
-            this.cmbMjerna.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.cmbVrste.FormattingEnabled = true;
+            this.cmbVrste.Location = new System.Drawing.Point(435, 58);
+            this.cmbVrste.Name = "cmbVrste";
+            this.cmbVrste.Size = new System.Drawing.Size(121, 21);
+            this.cmbVrste.TabIndex = 12;
+            this.cmbVrste.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(525, 42);
+            this.label6.Location = new System.Drawing.Point(435, 42);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(126, 13);
+            this.label6.Size = new System.Drawing.Size(71, 13);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Odaberite mjernu jedinicu";
+            this.label6.Text = "Vrsta energije";
+            // 
+            // cmbMjerna
+            // 
+            this.cmbMjerna.FormattingEnabled = true;
+            this.cmbMjerna.Location = new System.Drawing.Point(611, 58);
+            this.cmbMjerna.Name = "cmbMjerna";
+            this.cmbMjerna.Size = new System.Drawing.Size(121, 21);
+            this.cmbMjerna.TabIndex = 14;
+            this.cmbMjerna.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(611, 42);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(126, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Odaberite mjernu jedinicu";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // UnosPodataka
             // 
@@ -172,8 +193,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.cmbMjerna);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.cmbVrste);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.dateTimePicker2);
@@ -208,7 +231,9 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cmbMjerna;
+        private System.Windows.Forms.ComboBox cmbVrste;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmbMjerna;
+        private System.Windows.Forms.Label label7;
     }
 }
