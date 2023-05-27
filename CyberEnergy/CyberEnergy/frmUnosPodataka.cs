@@ -76,7 +76,11 @@ namespace CyberEnergy
             var zgrade = cmbZgrade.SelectedItem as Zgrade;
             var vrstaenergije = cmbVrste.SelectedItem as VrstaEnergije;
             var korisnik = frmPrijava.LoggedKorisnik;
-            korisnik.PerformUnos(korisnik, zgrade, mjernajedinica, vrstaenergije);
+           
+                //var unosPodatak = RepositoryUnosaPodataka.GetUnosPodataka(korisnik, zgrade);
+
+                RepositoryUnosaPodataka.InsertUnosa(korisnik, zgrade, mjernajedinica, vrstaenergije);
+                MessageBox.Show("Pritisnut");
 
         }
     }

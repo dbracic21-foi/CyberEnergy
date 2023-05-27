@@ -17,12 +17,9 @@ namespace CyberEnergy.Models
         {
             return Password == password;
         }
-        public void PerformUnos(Korisnik korisnik,Zgrade zgrade,MjernaJedinica mjernajedinica,VrstaEnergije vrstaenergije) { 
-        var unosPodatak = RepositoryUnosaPodataka.GetUnosPodataka(korisnik,zgrade);
-           
-                RepositoryUnosaPodataka.InsertUnosa(korisnik, zgrade,mjernajedinica, vrstaenergije);
+
            
         
         }
     }
-}
+
