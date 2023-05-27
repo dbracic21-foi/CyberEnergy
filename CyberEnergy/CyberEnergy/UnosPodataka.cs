@@ -29,14 +29,27 @@ namespace CyberEnergy
             List<Zgrade> zgrade = RepositoryZgrade.GetZgrade();
             cmbZgrade.DataSource = zgrade;
         }
+        private void ShowMjerna()
+        {
+
+            List<VrstaEnergije> vrstaenergije = RepositoryVrstaEnergije.GetEnergija();
+            cmbMjerna.DataSource = vrstaenergije;
+        }
         private void UnosPodataka_Load(object sender, EventArgs e)
         {
             ShowZgrade();
+            ShowMjerna();
+
         }
 
         private void btnOdustani_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

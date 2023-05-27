@@ -70,7 +70,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\RepositoryKorisnika.cs" />
+    <Compile Include="Repository\RepositoryMjerneJedinice.cs" />
     <Compile Include="Repository\RepositoryUloge.cs" />
+    <Compile Include="Repository\RepositoryVrstaEnergije.cs" />
     <Compile Include="Repository\RepositoryZgrade.cs" />
     <Compile Include="UnosPodataka.cs">
       <SubType>Form</SubType>

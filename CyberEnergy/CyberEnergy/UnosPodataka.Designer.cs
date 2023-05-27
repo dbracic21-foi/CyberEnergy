@@ -40,7 +40,7 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbMjerna = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -148,13 +148,14 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Unesite količinu";
             // 
-            // comboBox2
+            // cmbMjerna
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(525, 58);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 12;
+            this.cmbMjerna.FormattingEnabled = true;
+            this.cmbMjerna.Location = new System.Drawing.Point(525, 58);
+            this.cmbMjerna.Name = "cmbMjerna";
+            this.cmbMjerna.Size = new System.Drawing.Size(121, 21);
+            this.cmbMjerna.TabIndex = 12;
+            this.cmbMjerna.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -172,7 +173,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmbMjerna);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.dateTimePicker2);
@@ -207,7 +208,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbMjerna;
         private System.Windows.Forms.Label label6;
     }
 }
