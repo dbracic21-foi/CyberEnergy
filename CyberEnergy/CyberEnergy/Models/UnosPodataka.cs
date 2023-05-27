@@ -12,6 +12,8 @@ namespace CyberEnergy.Models
         public Zgrade Zgrade { get; set; }
         public MjernaJedinica MjernaJedinica { get; set; }
         public VrstaEnergije VrstaEnergije { get; set; }
+        
+        public Kolicina Kolicina { get; set; }
 
         public override string ToString()
         {

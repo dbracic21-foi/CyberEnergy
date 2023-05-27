@@ -38,7 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtKolicine = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbVrste = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -135,12 +135,13 @@
             this.dateTimePicker2.Size = new System.Drawing.Size(120, 20);
             this.dateTimePicker2.TabIndex = 9;
             // 
-            // textBox2
+            // txtKolicine
             // 
-            this.textBox2.Location = new System.Drawing.Point(276, 59);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 10;
+            this.txtKolicine.Location = new System.Drawing.Point(276, 59);
+            this.txtKolicine.Name = "txtKolicine";
+            this.txtKolicine.Size = new System.Drawing.Size(100, 20);
+            this.txtKolicine.TabIndex = 10;
+            this.txtKolicine.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label5
             // 
@@ -199,7 +200,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cmbVrste);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtKolicine);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -230,7 +231,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtKolicine;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbVrste;
         private System.Windows.Forms.Label label6;

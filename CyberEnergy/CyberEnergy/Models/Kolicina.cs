@@ -8,7 +8,7 @@ namespace CyberEnergy.Models
 {
     public class Kolicina
     {
-        public int Id { get; set; }
+        public int Id_Kolicine { get; set; }
         public string UkupnaKolicina { get; set; }
 
         public override string ToString()

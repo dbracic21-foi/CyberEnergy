@@ -33,7 +33,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cmbVrste = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtKolicina = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -88,12 +88,12 @@
             this.label5.TabIndex = 26;
             this.label5.Text = "Unesite količinu";
             // 
-            // textBox2
+            // txtKolicina
             // 
-            this.textBox2.Location = new System.Drawing.Point(264, 49);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 25;
+            this.txtKolicina.Location = new System.Drawing.Point(264, 49);
+            this.txtKolicina.Name = "txtKolicina";
+            this.txtKolicina.Size = new System.Drawing.Size(100, 20);
+            this.txtKolicina.TabIndex = 25;
             // 
             // dateTimePicker2
             // 
@@ -152,6 +152,7 @@
             this.btnSpremi.TabIndex = 18;
             this.btnSpremi.Text = "Spremi";
             this.btnSpremi.UseVisualStyleBackColor = true;
+            this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
             // 
             // btnOdustani
             // 
@@ -183,7 +184,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cmbVrste);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtKolicina);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
@@ -208,7 +209,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbVrste;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtKolicina;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
