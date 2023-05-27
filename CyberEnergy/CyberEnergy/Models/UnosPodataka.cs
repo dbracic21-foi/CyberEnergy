@@ -13,5 +13,9 @@ namespace CyberEnergy.Models
         public MjernaJedinica MjernaJedinica { get; set; }
         public VrstaEnergije VrstaEnergije { get; set; }
 
+        public override string ToString()
+        {
+            return Zgrade.Naziv_Zgrade;
+        }
     }
 }

@@ -50,5 +50,10 @@ namespace CyberEnergy
 
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmMijenjanjePodataka mijenjanjepodataka = new frmMijenjanjePodataka();
+            mijenjanjepodataka.ShowDialog();
+        }
     }
 }
