@@ -10,9 +10,11 @@ namespace CyberEnergy.Models
     {
         public int Id_Zgrade { get; set; }
         public string Naziv_Zgrade { get; set; }
+      
         public override string ToString()
         {
             return Naziv_Zgrade;
         }
+       
     }
 }

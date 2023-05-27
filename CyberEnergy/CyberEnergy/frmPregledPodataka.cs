@@ -21,14 +21,9 @@ namespace CyberEnergy
 
         private void frmPregledPodataka_Load(object sender, EventArgs e)
         {
-            ShowZgrade();
+           
         }
-        private void ShowZgrade()
-        {
-          
-            List<Zgrade> zgrade = RepositoryZgrade.GetZgrade();
-            cmbZgrade.DataSource = zgrade;
-        }
+      
 
 
 
@@ -49,7 +44,8 @@ namespace CyberEnergy
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            UnosPodataka frmunos = new UnosPodataka();
+            frmunos.ShowDialog();
         }
     }
 }

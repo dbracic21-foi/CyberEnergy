@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CyberEnergy.Models;
+using CyberEnergy.Repository;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,26 @@ namespace CyberEnergy
         public UnosPodataka()
         {
             InitializeComponent();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void ShowZgrade()
+        {
+
+            List<Zgrade> zgrade = RepositoryZgrade.GetZgrade();
+            cmbZgrade.DataSource = zgrade;
+        }
+        private void UnosPodataka_Load(object sender, EventArgs e)
+        {
+            ShowZgrade();
+        }
+
+        private void btnOdustani_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
