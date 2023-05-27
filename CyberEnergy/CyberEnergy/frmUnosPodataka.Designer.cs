@@ -1,6 +1,6 @@
 ﻿namespace CyberEnergy
 {
-    partial class UnosPodataka
+    partial class frmUnosPodataka
     {
         /// <summary>
         /// Required designer variable.
@@ -53,7 +53,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(423, 210);
+            this.textBox1.Size = new System.Drawing.Size(735, 156);
             this.textBox1.TabIndex = 0;
             // 
             // btnOdustani
@@ -171,7 +171,7 @@
             // cmbMjerna
             // 
             this.cmbMjerna.FormattingEnabled = true;
-            this.cmbMjerna.Location = new System.Drawing.Point(611, 58);
+            this.cmbMjerna.Location = new System.Drawing.Point(616, 58);
             this.cmbMjerna.Name = "cmbMjerna";
             this.cmbMjerna.Size = new System.Drawing.Size(121, 21);
             this.cmbMjerna.TabIndex = 14;
@@ -187,7 +187,7 @@
             this.label7.Text = "Odaberite mjernu jedinicu";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // UnosPodataka
+            // frmUnosPodataka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -209,7 +209,7 @@
             this.Controls.Add(this.btnSpremi);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.textBox1);
-            this.Name = "UnosPodataka";
+            this.Name = "frmUnosPodataka";
             this.Text = "UnosPodataka";
             this.Load += new System.EventHandler(this.UnosPodataka_Load);
             this.ResumeLayout(false);

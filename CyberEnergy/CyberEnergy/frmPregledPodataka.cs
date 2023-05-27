@@ -44,7 +44,7 @@ namespace CyberEnergy
 
         private void button2_Click(object sender, EventArgs e)
         {
-            UnosPodataka frmunos = new UnosPodataka();
+            frmUnosPodataka frmunos = new frmUnosPodataka();
             frmunos.ShowDialog();
         }
     }

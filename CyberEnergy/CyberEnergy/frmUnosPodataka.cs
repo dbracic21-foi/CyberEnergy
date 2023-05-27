@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace CyberEnergy
 {
-    public partial class UnosPodataka : Form
+    public partial class frmUnosPodataka : Form
     {
-        public UnosPodataka()
+        public frmUnosPodataka()
         {
             InitializeComponent();
         }

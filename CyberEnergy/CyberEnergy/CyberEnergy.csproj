@@ -65,6 +65,7 @@
       <DependentUpon>frmPregledPodataka.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Uloga.cs" />
+    <Compile Include="Models\UnosPodataka.cs" />
     <Compile Include="Models\VrstaEnergije.cs" />
     <Compile Include="Models\Zgrade.cs" />
     <Compile Include="Program.cs" />
@@ -72,13 +73,14 @@
     <Compile Include="Repository\RepositoryKorisnika.cs" />
     <Compile Include="Repository\RepositoryMjerneJedinice.cs" />
     <Compile Include="Repository\RepositoryUloge.cs" />
+    <Compile Include="Repository\RepositoryUnosaPodataka.cs" />
     <Compile Include="Repository\RepositoryVrstaEnergije.cs" />
     <Compile Include="Repository\RepositoryZgrade.cs" />
-    <Compile Include="UnosPodataka.cs">
+    <Compile Include="frmUnosPodataka.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UnosPodataka.Designer.cs">
-      <DependentUpon>UnosPodataka.cs</DependentUpon>
+    <Compile Include="frmUnosPodataka.Designer.cs">
+      <DependentUpon>frmUnosPodataka.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmPregledPodataka.resx">
       <DependentUpon>frmPregledPodataka.cs</DependentUpon>
@@ -95,8 +97,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UnosPodataka.resx">
-      <DependentUpon>UnosPodataka.cs</DependentUpon>
+    <EmbeddedResource Include="frmUnosPodataka.resx">
+      <DependentUpon>frmUnosPodataka.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
