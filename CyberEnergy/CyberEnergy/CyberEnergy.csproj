@@ -56,6 +56,7 @@
       <DependentUpon>frmPrijava.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Korisnik.cs" />
+    <Compile Include="Models\MjernaJedinica.cs" />
     <Compile Include="Models\Persons.cs" />
     <Compile Include="frmPregledPodataka.cs">
       <SubType>Form</SubType>
@@ -64,6 +65,7 @@
       <DependentUpon>frmPregledPodataka.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Uloga.cs" />
+    <Compile Include="Models\VrstaEnergije.cs" />
     <Compile Include="Models\Zgrade.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
