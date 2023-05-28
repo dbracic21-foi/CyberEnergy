@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMijenjanjePodataka));
             this.label7 = new System.Windows.Forms.Label();
             this.cmbMjerna = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -216,6 +217,7 @@
             this.Controls.Add(this.btnSpremi);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.textBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMijenjanjePodataka";
             this.Text = "frmMijenjanjePodataka";
             this.Load += new System.EventHandler(this.frmMijenjanjePodataka_Load);

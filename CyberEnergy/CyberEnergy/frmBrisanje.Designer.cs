@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBrisanje));
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnBrisi = new System.Windows.Forms.Button();
@@ -39,10 +40,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(107, 40);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(80, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 16);
+            this.label3.Size = new System.Drawing.Size(81, 13);
             this.label3.TabIndex = 49;
             this.label3.Text = "Odaberite Unos";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -50,19 +50,17 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(107, 63);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Location = new System.Drawing.Point(80, 51);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 24);
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 48;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnBrisi
             // 
-            this.btnBrisi.Location = new System.Drawing.Point(650, 497);
-            this.btnBrisi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBrisi.Location = new System.Drawing.Point(488, 404);
             this.btnBrisi.Name = "btnBrisi";
-            this.btnBrisi.Size = new System.Drawing.Size(170, 44);
+            this.btnBrisi.Size = new System.Drawing.Size(128, 36);
             this.btnBrisi.TabIndex = 35;
             this.btnBrisi.Text = "Obriši";
             this.btnBrisi.UseVisualStyleBackColor = true;
@@ -70,10 +68,9 @@
             // 
             // btnOdustani
             // 
-            this.btnOdustani.Location = new System.Drawing.Point(880, 497);
-            this.btnOdustani.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOdustani.Location = new System.Drawing.Point(660, 404);
             this.btnOdustani.Name = "btnOdustani";
-            this.btnOdustani.Size = new System.Drawing.Size(108, 44);
+            this.btnOdustani.Size = new System.Drawing.Size(81, 36);
             this.btnOdustani.TabIndex = 34;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
@@ -82,26 +79,27 @@
             // dgvPrikaz
             // 
             this.dgvPrikaz.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPrikaz.Location = new System.Drawing.Point(27, 129);
+            this.dgvPrikaz.Location = new System.Drawing.Point(20, 105);
+            this.dgvPrikaz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvPrikaz.Name = "dgvPrikaz";
             this.dgvPrikaz.RowHeadersWidth = 51;
             this.dgvPrikaz.RowTemplate.Height = 24;
-            this.dgvPrikaz.Size = new System.Drawing.Size(1028, 230);
+            this.dgvPrikaz.Size = new System.Drawing.Size(769, 187);
             this.dgvPrikaz.TabIndex = 50;
             this.dgvPrikaz.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // frmBrisanje
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvPrikaz);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnBrisi);
             this.Controls.Add(this.btnOdustani);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBrisanje";
             this.Text = "frmBrisanje";
             this.Load += new System.EventHandler(this.frmBrisanje_Load);
