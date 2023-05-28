@@ -70,6 +70,12 @@
     <Compile Include="frmPrijava.Designer.cs">
       <DependentUpon>frmPrijava.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmIspis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIspis.Designer.cs">
+      <DependentUpon>frmIspis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Kolicina.cs" />
     <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Models\MjernaJedinica.cs" />
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrijava.resx">
       <DependentUpon>frmPrijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIspis.resx">
+      <DependentUpon>frmIspis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

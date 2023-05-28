@@ -61,5 +61,11 @@ namespace CyberEnergy
             frmBrisanje frmBrisanje = new frmBrisanje();
             frmBrisanje.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmIspis frmIspis = new frmIspis();
+            frmIspis.ShowDialog();
+        }
     }
 }

@@ -65,5 +65,21 @@ namespace CyberEnergy.Repository
             };
             return Zgrade;
         }
+        public static List<Zgrade> GetZgradeSearch(string NazivZgrade)
+        {
+            var zgrade = new List<Zgrade>(); //stvara listu zahtjeva
+
+            string sql = $"SELECT * FROM dbo.Zgrade WHERE Naziv_Zgrade='{NazivZgrade}'";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Zgrade zgrade1  = CreateObject(reader);
+                zgrade.Add(zgrade1);
+            }
+            reader.Close();
+            DB.CloseConnection();
+            return zgrade;
+        }
     }
 }

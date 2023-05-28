@@ -43,6 +43,7 @@ namespace CyberEnergy.Repository
             DB.CloseConnection();
             return unospodataka;
         }
+      
         private static UnosPodataka CreateObject(SqlDataReader reader)
         {
 

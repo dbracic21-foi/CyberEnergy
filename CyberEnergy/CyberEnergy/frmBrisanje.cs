@@ -60,9 +60,8 @@ namespace CyberEnergy
         }
         private void showtablica()
         {
-            List<UnosPodataka> unospodataka = RepositoryUnosaPodataka.GetUnosPodataka();
-            dgvPrikaz.DataSource = unospodataka;
-
+            var zgrade = RepositoryZgrade.GetZgrade();
+            dgvPrikaz.DataSource = zgrade;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

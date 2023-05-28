@@ -37,9 +37,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(225, 379);
+            this.button5.Location = new System.Drawing.Point(300, 466);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(167, 50);
+            this.button5.Size = new System.Drawing.Size(223, 62);
             this.button5.TabIndex = 27;
             this.button5.Text = "Zatvori";
             this.button5.UseVisualStyleBackColor = true;
@@ -47,10 +48,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(225, 207);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Location = new System.Drawing.Point(300, 255);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(167, 64);
+            this.button4.Size = new System.Drawing.Size(223, 79);
             this.button4.TabIndex = 26;
             this.button4.Text = "Obriši podatke";
             this.button4.UseVisualStyleBackColor = true;
@@ -58,10 +59,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(225, 118);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(300, 145);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 59);
+            this.button3.Size = new System.Drawing.Size(223, 73);
             this.button3.TabIndex = 25;
             this.button3.Text = "Promjeni podatke";
             this.button3.UseVisualStyleBackColor = true;
@@ -69,10 +70,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(225, 35);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(300, 43);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 54);
+            this.button2.Size = new System.Drawing.Size(223, 66);
             this.button2.TabIndex = 24;
             this.button2.Text = "Unosi podatke";
             this.button2.UseVisualStyleBackColor = true;
@@ -80,24 +81,27 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(225, 297);
+            this.button1.Location = new System.Drawing.Point(300, 366);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 62);
+            this.button1.Size = new System.Drawing.Size(223, 76);
             this.button1.TabIndex = 28;
             this.button1.Text = "IspisPodataka";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmPregledPodataka
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(630, 490);
+            this.ClientSize = new System.Drawing.Size(840, 603);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPregledPodataka";
