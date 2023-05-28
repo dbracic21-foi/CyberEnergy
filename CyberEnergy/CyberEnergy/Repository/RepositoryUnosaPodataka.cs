@@ -68,9 +68,9 @@ namespace CyberEnergy.Repository
 
 
         }
-        public static void InsertUnosa(Zgrade zgrade,MjernaJedinica mjernajedinica, VrstaEnergije vrstaenergije, Kolicina kolicina)
+        public static void InsertUnosa(Zgrade zgrade,MjernaJedinica mjernajedinica, VrstaEnergije vrstaenergije)
         {
-            string sql = $"INSERT INTO UnosPodataka (NazivZgrade,Naziv_Mjerne_Jedinice,Vrsta_Potrosnje,Kolicina) VALUES ('{zgrade.Naziv_Zgrade}','{mjernajedinica.Naziv_Mjerne_Jedinice}','{vrstaenergije.Naziv_Vrste_Potrosnje}','{kolicina.UkupnaKolicina})";
+            string sql = $"INSERT INTO UnosPodataka (NazivZgrade,Naziv_Mjerne_Jedinice,Vrsta_Potrosnje) VALUES ('{zgrade.Naziv_Zgrade}','{mjernajedinica.Naziv_Mjerne_Jedinice}','{vrstaenergije.Naziv_Vrste_Potrosnje}')";
             DB.OpenConnection();
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
@@ -86,7 +86,10 @@ namespace CyberEnergy.Repository
         }
         public static void DeleteUnosaPodataka(int id)
         {
-            string sql = $"DELETE FROM UnosaPodataka WHERE Id_UnosaPodataka = {id} ";
+            string sql = $"DELETE FROM UnosPodataka WHERE Id_UnosaPodataka = {id} ";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
         }
         
     }

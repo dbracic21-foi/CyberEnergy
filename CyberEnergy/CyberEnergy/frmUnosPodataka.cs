@@ -38,18 +38,19 @@ namespace CyberEnergy
             List<MjernaJedinica> mjernajedinica = RepositoryMjerneJedinice.GetMjernaJedinica();
             cmbMjerna.DataSource = mjernajedinica;
         }
-        private void ShowKolicine()
+      /*  private void ShowKolicine()
         {
 
             List<Kolicina> kolicina = RepositoryKolicine.GetKolicina();
           txtKolicine.Text = kolicina.ToString();
         }
+      */
         private void UnosPodataka_Load(object sender, EventArgs e)
         {
             ShowZgrade();
             ShowMjerna();
             ShowEnergije();
-            ShowKolicine();
+           // ShowKolicine();
 
         }
        
@@ -82,14 +83,14 @@ namespace CyberEnergy
           var mjernajedinica = cmbMjerna.SelectedItem as MjernaJedinica;
             var zgrade = cmbZgrade.SelectedItem as Zgrade;
             var vrstaenergije = cmbVrste.SelectedItem as VrstaEnergije;
-            Kolicina kolicina = new Kolicina();
-            kolicina.UkupnaKolicina = txtKolicine.Text;
+            //Kolicina kolicina = new Kolicina();
+            //kolicina.UkupnaKolicina = txtKolicine.Text;
            
 
 
             //var unosPodatak = RepositoryUnosaPodataka.GetUnosPodataka(korisnik, zgrade);
 
-            RepositoryUnosaPodataka.InsertUnosa(zgrade, mjernajedinica, vrstaenergije,kolicina);
+            RepositoryUnosaPodataka.InsertUnosa(zgrade, mjernajedinica, vrstaenergije);
                 MessageBox.Show("Pritisnut");
      
         }

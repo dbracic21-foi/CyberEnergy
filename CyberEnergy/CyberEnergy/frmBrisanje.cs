@@ -42,13 +42,32 @@ namespace CyberEnergy
 
         private void btnBrisi_Click(object sender, EventArgs e)
         {
-          
+            UnosPodataka unosPodataka = new UnosPodataka();
+            var unospodataka = RepositoryUnosaPodataka.GetUnosPodataka(unosPodataka.Id_UnosaPodataka);
             RepositoryUnosaPodataka.DeleteUnosaPodataka(int.Parse(comboBox1.Text));
+            showtablica();
         }
 
         private void frmBrisanje_Load(object sender, EventArgs e)
         {
+            showtablica();
             showid();
+        }
+
+        private void btnOdustani_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+        private void showtablica()
+        {
+            List<UnosPodataka> unospodataka = RepositoryUnosaPodataka.GetUnosPodataka();
+            dgvPrikaz.DataSource = unospodataka;
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
