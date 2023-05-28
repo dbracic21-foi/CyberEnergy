@@ -28,10 +28,10 @@ namespace CyberEnergy.Repository
 
 
         }
-        public static List<UnosPodataka>GetUnosPodataka(Korisnik korisnik)
+        public static List<UnosPodataka>GetUnosPodataka()
         {
             List<UnosPodataka> unospodataka = new List<UnosPodataka>();
-            string sql = $"SELECT * FROM UnosPodataka WHERE Id_Korisnika = {korisnik.Id_Korisnika}";
+            string sql = $"SELECT * FROM UnosPodataka";
             DB.OpenConnection();
             var reader = DB.GetDataReader( sql );
            while(reader.Read()) {
@@ -44,17 +44,17 @@ namespace CyberEnergy.Repository
         }
         private static UnosPodataka CreateObject(SqlDataReader reader)
         {
-            string NazivZgrade = reader["NazivZgrade"].ToString();
-            var nazivzgrade = RepositoryZgrade.GetZgrade(nazivzgrade);
+            int NazivZgrade = int.Parse(reader["NazivZgrade"].ToString());
+            var nazivzgrade = RepositoryZgrade.GetZgrade(NazivZgrade);
 
 
-            int Id_Korisnika = int.Parse(reader["Id_Korisnika"].ToString());
-            var korisnik = RepositoryKorisnika.GetKorisnik(Id_Korisnika);
+            //int Id_Korisnika = int.Parse(reader["Id_Korisnika"].ToString());
+            //var korisnik = RepositoryKorisnika.GetKorisnik(Id_Korisnika);
 
-            int  Naziv_Mjerne_Jedinice = int.Parse(reader["Id_MjerneJedinice"].ToString());
+            int  Naziv_Mjerne_Jedinice = int.Parse(reader["Naziv_Mjerne_Jedinice"].ToString());
             var mjernajedinica = RepositoryMjerneJedinice.GetMjernaJedinica(Naziv_Mjerne_Jedinice);
 
-            int Id_VrstePotrosnje = int.Parse(reader["Id_VrstePotrosnje"].ToString());
+            int Id_VrstePotrosnje = int.Parse(reader["Vrsta_Potrosnje"].ToString());
             var NazivPotrosnje = RepositoryVrstaEnergije.GetEnergija(Id_VrstePotrosnje);
 
             int UkupnaKolicina = int.Parse(reader["UkupnaKolicina"].ToString());
@@ -62,7 +62,7 @@ namespace CyberEnergy.Repository
 
             var unospodataka = new UnosPodataka { 
             Zgrade = nazivzgrade,
-            Korisnik = korisnik,
+           // Korisnik = korisnik,
             MjernaJedinica = mjernajedinica,
             VrstaEnergije = NazivPotrosnje,
             Kolicina = ukupnakolicina
@@ -80,12 +80,14 @@ namespace CyberEnergy.Repository
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
-        public static void UpdateUnosaPodataka(UnosPodataka unospodataka, Zgrade zgrade, VrstaEnergije vrstaenergije,MjernaJedinica mjernajedinice)
+        
+        public static void UpdateUnosaPodataka(Zgrade zgrade, VrstaEnergije vrstaenergije,MjernaJedinica mjernajedinice,int Id)
         {
-            string sql = $"UPDATE UnosPodataka SET NazivZgrade = '{zgrade.Naziv_Zgrade}', Naziv_Mjerne_Jedinice = '{mjernajedinica.Naziv_Mjerne_Jedinice}', Vrsta_Potrosnje = '{vrstaenergije.Naziv_Vrste_Potrosnje}' WHERE Id = {unosPodataka.Id}";
+            string sql = $"UPDATE UnosPodataka SET NazivZgrade = '{zgrade.Naziv_Zgrade}', Naziv_Mjerne_Jedinice = '{mjernajedinice.Naziv_Mjerne_Jedinice}', Vrsta_Potrosnje = '{vrstaenergije.Naziv_Vrste_Potrosnje}' WHERE Id = {Id}";
             DB.OpenConnection();
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
+        
     }
 }

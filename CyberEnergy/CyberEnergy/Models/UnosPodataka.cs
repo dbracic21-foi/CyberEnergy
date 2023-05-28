@@ -15,9 +15,6 @@ namespace CyberEnergy.Models
         
         public Kolicina Kolicina { get; set; }
 
-        public override string ToString()
-        {
-            return Zgrade.Naziv_Zgrade;
-        }
+     
     }
 }
