@@ -69,9 +69,9 @@ namespace CyberEnergy.Repository
 
 
         }
-        public static void InsertUnosa(Zgrade zgrade,MjernaJedinica mjernajedinica, VrstaEnergije vrstaenergije)
+        public static void InsertUnosa(Zgrade zgrade,MjernaJedinica mjernajedinica, VrstaEnergije vrstaenergije, Kolicina kolicina)
         {
-            string sql = $"INSERT INTO UnosPodataka (NazivZgrade,Naziv_Mjerne_Jedinice,Vrsta_Potrosnje) VALUES ('{zgrade.Naziv_Zgrade}','{mjernajedinica.Naziv_Mjerne_Jedinice}','{vrstaenergije.Naziv_Vrste_Potrosnje}')";
+            string sql = $"INSERT INTO UnosPodataka (NazivZgrade,Naziv_Mjerne_Jedinice,Vrsta_Potrosnje,Kolicina) VALUES ('{zgrade.Naziv_Zgrade}','{mjernajedinica.Naziv_Mjerne_Jedinice}','{vrstaenergije.Naziv_Vrste_Potrosnje}','{kolicina.UkupnaKolicina}')";
             DB.OpenConnection();
             DB.ExecuteCommand(sql);
             DB.CloseConnection();

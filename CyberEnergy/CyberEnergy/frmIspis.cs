@@ -37,11 +37,7 @@ namespace CyberEnergy
         {
             Close();
         }
-        private void showpretrazivanje()
-        {
-            var zgrade = RepositoryZgrade.GetZgradeSearch(label.Text);
-            dgvTablica.DataSource = zgrade;
-        }
+        
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             var zgrade = RepositoryZgrade.GetZgradeSearch(txtPretrazivanje.Text);

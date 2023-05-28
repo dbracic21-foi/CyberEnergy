@@ -51,7 +51,7 @@ namespace CyberEnergy
 
         private void btnSpremi_Click(object sender, EventArgs e)
         {
-          
+            MessageBox.Show("Uspješno ste promjenili podatke");
             
             var mjernajedinica = cmbMjerna.SelectedItem as MjernaJedinica;
             var zgrade = cmbZgrade.SelectedItem as Zgrade;

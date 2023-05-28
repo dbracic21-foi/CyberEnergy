@@ -38,6 +38,13 @@ namespace CyberEnergy
                 ids.Add(unospodataka[i].Id_UnosaPodataka);
             }
             comboBox1.DataSource = ids;
+
+        }
+        private void showZgrade ()
+        {
+            Zgrade zgrade = new Zgrade();
+            zgrade.Naziv_Zgrade = txtZgrade.Text;
+
         }
 
         private void btnBrisi_Click(object sender, EventArgs e)
@@ -45,12 +52,11 @@ namespace CyberEnergy
             UnosPodataka unosPodataka = new UnosPodataka();
             var unospodataka = RepositoryUnosaPodataka.GetUnosPodataka(unosPodataka.Id_UnosaPodataka);
             RepositoryUnosaPodataka.DeleteUnosaPodataka(int.Parse(comboBox1.Text));
-            showtablica();
+            MessageBox.Show("Uspješno ste obrisali podatke");
         }
 
         private void frmBrisanje_Load(object sender, EventArgs e)
         {
-            showtablica();
             showid();
         }
 
@@ -58,15 +64,8 @@ namespace CyberEnergy
         {
             Close();
         }
-        private void showtablica()
-        {
-            var zgrade = RepositoryZgrade.GetZgrade();
-            dgvPrikaz.DataSource = zgrade;
-        }
+      
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
     }
 }

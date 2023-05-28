@@ -32,7 +32,7 @@ namespace CyberEnergy.Repository
         public static List<Zgrade> GetZgrade()
         {
             List<Zgrade> Zgrade = new List<Zgrade>();
-            string sql = $"SELECT * FROM [dbo].[Zgrade]";
+            string sql = $"SELECT *\r\nFROM [dbo].[Zgrade]\r\nWHERE Id_Uloge = 1 OR (Id_Uloge = 2 AND Id_Uloge = 2) OR (Id_Uloge = 3 AND Id_Uloge = 3)\r\n";
 
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
