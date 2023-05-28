@@ -78,16 +78,11 @@ namespace CyberEnergy
           var mjernajedinica = cmbMjerna.SelectedItem as MjernaJedinica;
             var zgrade = cmbZgrade.SelectedItem as Zgrade;
             var vrstaenergije = cmbVrste.SelectedItem as VrstaEnergije;
-           // var kolicina = txtKolicine.Text;
             Kolicina kolicina = new Kolicina();
             kolicina.UkupnaKolicina = txtKolicine.Text;
-           
-
-
-           
-
             RepositoryUnosaPodataka.InsertUnosa(zgrade, mjernajedinica, vrstaenergije,kolicina);
-                MessageBox.Show("Pritisnut");
+            MessageBox.Show("Podaci su uneseni");
+               
      
         }
 

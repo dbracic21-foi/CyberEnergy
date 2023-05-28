@@ -58,12 +58,10 @@ namespace CyberEnergy
             var vrstaenergije = cmbVrste.SelectedItem as VrstaEnergije;
             var korisnik = frmPrijava.LoggedKorisnik;
             var combobox = cmbOdabir.SelectedItem as UnosPodataka;
-
             UnosPodataka unosPodataka = new UnosPodataka();
             var unospodataka = RepositoryUnosaPodataka.GetUnosPodataka(unosPodataka.Id_UnosaPodataka);
-
             RepositoryUnosaPodataka.UpdateUnosaPodataka(zgrade,vrstaenergije, mjernajedinica, int.Parse(cmbOdabir.Text));
-            MessageBox.Show("Pritisnut");
+           
             
         }
         private void  ShowKolicine()
