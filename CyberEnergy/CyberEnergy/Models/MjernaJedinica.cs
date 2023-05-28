@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CyberEnergy.Models
 {
+    //Model mjerne jedinice
     public class MjernaJedinica
     {
         public int Id_MjerneJedinice { get; set; }

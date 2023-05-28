@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUnosPodataka));
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnOdustani = new System.Windows.Forms.Button();
             this.btnSpremi = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.cmbZgrade = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtKolicine = new System.Windows.Forms.TextBox();
@@ -43,19 +41,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox1.Location = new System.Drawing.Point(36, 167);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(735, 156);
-            this.textBox1.TabIndex = 0;
-            // 
             // btnOdustani
             // 
-            this.btnOdustani.Location = new System.Drawing.Point(595, 405);
+            this.btnOdustani.Location = new System.Drawing.Point(515, 394);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(75, 23);
             this.btnOdustani.TabIndex = 1;
@@ -65,7 +53,7 @@
             // 
             // btnSpremi
             // 
-            this.btnSpremi.Location = new System.Drawing.Point(716, 405);
+            this.btnSpremi.Location = new System.Drawing.Point(636, 394);
             this.btnSpremi.Name = "btnSpremi";
             this.btnSpremi.Size = new System.Drawing.Size(75, 23);
             this.btnSpremi.TabIndex = 2;
@@ -73,19 +61,10 @@
             this.btnSpremi.UseVisualStyleBackColor = true;
             this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 151);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Napomena";
-            // 
             // cmbZgrade
             // 
             this.cmbZgrade.FormattingEnabled = true;
-            this.cmbZgrade.Location = new System.Drawing.Point(106, 58);
+            this.cmbZgrade.Location = new System.Drawing.Point(85, 200);
             this.cmbZgrade.Name = "cmbZgrade";
             this.cmbZgrade.Size = new System.Drawing.Size(121, 21);
             this.cmbZgrade.TabIndex = 4;
@@ -94,7 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(114, 42);
+            this.label2.Location = new System.Drawing.Point(93, 184);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 13);
             this.label2.TabIndex = 5;
@@ -102,7 +81,7 @@
             // 
             // txtKolicine
             // 
-            this.txtKolicine.Location = new System.Drawing.Point(276, 59);
+            this.txtKolicine.Location = new System.Drawing.Point(255, 201);
             this.txtKolicine.Name = "txtKolicine";
             this.txtKolicine.Size = new System.Drawing.Size(100, 20);
             this.txtKolicine.TabIndex = 10;
@@ -111,7 +90,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(276, 42);
+            this.label5.Location = new System.Drawing.Point(255, 184);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 13);
             this.label5.TabIndex = 11;
@@ -120,7 +99,7 @@
             // cmbVrste
             // 
             this.cmbVrste.FormattingEnabled = true;
-            this.cmbVrste.Location = new System.Drawing.Point(435, 58);
+            this.cmbVrste.Location = new System.Drawing.Point(414, 200);
             this.cmbVrste.Name = "cmbVrste";
             this.cmbVrste.Size = new System.Drawing.Size(121, 21);
             this.cmbVrste.TabIndex = 12;
@@ -129,7 +108,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(435, 42);
+            this.label6.Location = new System.Drawing.Point(414, 184);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 13);
             this.label6.TabIndex = 13;
@@ -138,7 +117,7 @@
             // cmbMjerna
             // 
             this.cmbMjerna.FormattingEnabled = true;
-            this.cmbMjerna.Location = new System.Drawing.Point(616, 58);
+            this.cmbMjerna.Location = new System.Drawing.Point(595, 200);
             this.cmbMjerna.Name = "cmbMjerna";
             this.cmbMjerna.Size = new System.Drawing.Size(121, 21);
             this.cmbMjerna.TabIndex = 14;
@@ -147,7 +126,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(611, 42);
+            this.label7.Location = new System.Drawing.Point(590, 184);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(126, 13);
             this.label7.TabIndex = 15;
@@ -159,7 +138,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(723, 429);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cmbMjerna);
             this.Controls.Add(this.label6);
@@ -168,10 +147,8 @@
             this.Controls.Add(this.txtKolicine);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbZgrade);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSpremi);
             this.Controls.Add(this.btnOdustani);
-            this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmUnosPodataka";
             this.Text = "UnosPodataka";
@@ -182,11 +159,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnOdustani;
         private System.Windows.Forms.Button btnSpremi;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbZgrade;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtKolicine;

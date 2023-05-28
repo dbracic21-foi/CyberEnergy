@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CyberEnergy.Models
 {
+    //Model Kolicine
     public class Kolicina
     {
         public int Id_Kolicine { get; set; }

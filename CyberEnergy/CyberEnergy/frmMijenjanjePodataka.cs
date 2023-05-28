@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace CyberEnergy
 {
+    //forma za mijenjanje podataka
     public partial class frmMijenjanjePodataka : Form
     {
         public frmMijenjanjePodataka()
@@ -23,7 +24,6 @@ namespace CyberEnergy
         {
             
             ShowKolicine();
-            MessageBox.Show("Pritisnut");
             ShowZgrade();
             ShowMjerna();
             ShowEnergije();
@@ -83,6 +83,11 @@ namespace CyberEnergy
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnOdustani_Click(object sender, EventArgs e)
+        {
+            Close();    
         }
     }
 }

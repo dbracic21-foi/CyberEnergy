@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace CyberEnergy
 {
+    //forma za pocetni pregled podataka
     public partial class frmPregledPodataka : Form
     {
         public frmPregledPodataka()

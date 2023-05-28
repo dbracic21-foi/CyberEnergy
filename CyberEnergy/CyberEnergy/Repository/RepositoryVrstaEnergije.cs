@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 
 namespace CyberEnergy.Repository
 {
+    //Repozitorij za dohvačanje Vrste energije iz baze podataka
+    //Vrste energije  dohvačamo po njegovom Id-u
     public class RepositoryVrstaEnergije
     {
         public static VrstaEnergije GetEnergija(int id)

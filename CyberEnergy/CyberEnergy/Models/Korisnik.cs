@@ -8,6 +8,7 @@ using System.Windows.Forms;
 
 namespace CyberEnergy.Models
 {
+    //Model Korisnika
     public class Korisnik:Persons
     {
         public string Username { get; set; }

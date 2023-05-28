@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CyberEnergy.Models
 {
+    //Model Zgrade
     public class Zgrade
     {
         public int Id_Zgrade { get; set; }

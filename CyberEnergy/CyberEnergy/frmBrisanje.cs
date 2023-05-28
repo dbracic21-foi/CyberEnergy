@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace CyberEnergy
 {
+    //forma za Brisanje stavki pomocu Id-a
     public partial class frmBrisanje : Form
     {
         public frmBrisanje()
@@ -40,12 +41,7 @@ namespace CyberEnergy
             comboBox1.DataSource = ids;
 
         }
-        private void showZgrade ()
-        {
-            Zgrade zgrade = new Zgrade();
-            zgrade.Naziv_Zgrade = txtZgrade.Text;
-
-        }
+   
 
         private void btnBrisi_Click(object sender, EventArgs e)
         {

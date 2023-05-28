@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 
 namespace CyberEnergy.Repository
 {
+    //Repozitorij za dohvačanje Zgrada iz baze podataka
+    //Zgrade dohvačamo po njegovom Id-u
     public class RepositoryZgrade
     {
         public static Zgrade GetZgrade(int id)
@@ -67,7 +69,7 @@ namespace CyberEnergy.Repository
         }
         public static List<Zgrade> GetZgradeSearch(string NazivZgrade)
         {
-            var zgrade = new List<Zgrade>(); //stvara listu zahtjeva
+            var zgrade = new List<Zgrade>();
 
             string sql = $"SELECT * FROM dbo.Zgrade WHERE Naziv_Zgrade='{NazivZgrade}'";
             DB.OpenConnection();

@@ -9,6 +9,8 @@ using System.Data.SqlClient;
 
 namespace CyberEnergy.Repository
 {
+    //Repozitorij za unos,izmjenu i brisanje podataka iz baze podataka
+    //Pristupamo preko Id_Unosa podataka
     public class RepositoryUnosaPodataka
     {
         public static UnosPodataka GetUnosPodataka(int Id )

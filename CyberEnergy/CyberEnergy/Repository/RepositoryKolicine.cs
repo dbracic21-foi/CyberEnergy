@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 using CyberEnergy.Models;
 using DBLayer;
 namespace CyberEnergy.Repository
-{
+{ 
+    //Repozitorij za dohvačanje različitih vrsta energija iz baze podataka
+    //Rzličite vrste energije dohvačamo po njegovom Id-u
     public class RepositoryKolicine
     {
         public static Kolicina GetKolicina(int id)

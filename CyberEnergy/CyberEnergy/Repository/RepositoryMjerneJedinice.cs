@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 
 namespace CyberEnergy.Repository
 {
+    //Repozitorij za dohvačanje Mjernih jedinica iz baze podataka
+    //MjerneJedinice dohvačamo po njegovom Id-u
     public class RepositoryMjerneJedinice
     {
         public static MjernaJedinica GetMjernaJedinica(int id)

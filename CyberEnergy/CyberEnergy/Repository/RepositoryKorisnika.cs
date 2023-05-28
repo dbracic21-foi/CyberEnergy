@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 
 namespace CyberEnergy.Repository
 {
+    //Repozitorij za dohvačanje različitih korisnika iz baze podataka
+    //Različite korisnike dohvačamo po njegovom Id-u
     public class RepositoryKorisnika
     {
         public static Korisnik GetKorisnik(string Username)

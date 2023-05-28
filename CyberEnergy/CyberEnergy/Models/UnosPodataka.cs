@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CyberEnergy.Models
 {
+    //Model za unos podataka u abzu
     public class UnosPodataka
     {
         public int Id_UnosaPodataka { get; set; }   

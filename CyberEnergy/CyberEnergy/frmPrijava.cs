@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace CyberEnergy
 {
+    //forma za prijavu korisnika
     public partial class frmPrijava : Form
     {
         public static Korisnik LoggedKorisnik { get; set; }
@@ -48,9 +49,6 @@ namespace CyberEnergy
             {
                 LoggedKorisnik = RepositoryKorisnika.GetKorisnik(txtUsername.Text);
                 if (LoggedKorisnik != null && LoggedKorisnik.CheckPassword(txtPassword.Text))
-
-
-
                 {
 
 
@@ -64,13 +62,9 @@ namespace CyberEnergy
                 }
 
             }
-
-
             LoggedKorisnik = RepositoryKorisnika.GetKorisnik(txtUsername.Text);
             if (LoggedKorisnik != null && LoggedKorisnik.CheckPassword(txtPassword.Text))
-
             {
-
                 frmPregledPodataka frmPodaci = new frmPregledPodataka();
 
                 frmPodaci.ShowDialog();

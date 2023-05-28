@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace CyberEnergy
 {
+    // forma za ispis zgrada
     public partial class frmIspis : Form
     {
         public frmIspis()

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CyberEnergy.Models
 {
+    //Model apstrakne klase Persosns
     public abstract class Persons
     {
         public int Id_Korisnika { get; set; }

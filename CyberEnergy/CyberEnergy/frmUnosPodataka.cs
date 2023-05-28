@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace CyberEnergy
 {
+    //forma za unos podataka
     public partial class frmUnosPodataka : Form
     {
         public frmUnosPodataka()
@@ -38,19 +39,13 @@ namespace CyberEnergy
             List<MjernaJedinica> mjernajedinica = RepositoryMjerneJedinice.GetMjernaJedinica();
             cmbMjerna.DataSource = mjernajedinica;
         }
-      /*  private void ShowKolicine()
-        {
-
-            List<Kolicina> kolicina = RepositoryKolicine.GetKolicina();
-          txtKolicine.Text = kolicina.ToString();
-        }
-      */
+     
         private void UnosPodataka_Load(object sender, EventArgs e)
         {
             ShowZgrade();
             ShowMjerna();
             ShowEnergije();
-           // ShowKolicine();
+           
 
         }
        

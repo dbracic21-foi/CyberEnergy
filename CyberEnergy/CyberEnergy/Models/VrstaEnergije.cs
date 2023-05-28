@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CyberEnergy.Models
 {
+    //Model vrste energije
     public class VrstaEnergije
     {
       public int Id_VrstePotrosnje { get; set; }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CyberEnergy.Models
 {
+    //Model za uloge
     public class Uloga
     {
         public int Id_Oznaka { get; set; }
