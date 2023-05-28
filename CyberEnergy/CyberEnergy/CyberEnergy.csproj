@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DBLayer">
       <HintPath>..\..\..\PI23-G1-dbracic21-5\DBLayer.dll</HintPath>
@@ -49,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBrisanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrisanje.Designer.cs">
+      <DependentUpon>frmBrisanje.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMijenjanjePodataka.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +99,9 @@
     <Compile Include="frmUnosPodataka.Designer.cs">
       <DependentUpon>frmUnosPodataka.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmBrisanje.resx">
+      <DependentUpon>frmBrisanje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMijenjanjePodataka.resx">
       <DependentUpon>frmMijenjanjePodataka.cs</DependentUpon>
     </EmbeddedResource>

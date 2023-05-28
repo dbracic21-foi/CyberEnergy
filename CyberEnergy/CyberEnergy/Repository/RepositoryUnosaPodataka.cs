@@ -11,10 +11,11 @@ namespace CyberEnergy.Repository
 {
     public class RepositoryUnosaPodataka
     {
-        public static UnosPodataka GetUnosPodataka(Zgrade zgrade )
+        public static UnosPodataka GetUnosPodataka(int Id )
         {
             UnosPodataka unospodataka = null;
-            string sql = $"SELECT * FROM UnosPodataka WHERE NazivZgrade ='{zgrade.Naziv_Zgrade}'";
+            
+            string sql = $"SELECT * FROM UnosPodataka WHERE Id_UnosaPodataka = {Id}";
             DB.OpenConnection();
             var reader = DB.GetDataReader( sql );
             if(reader.HasRows)
@@ -44,49 +45,48 @@ namespace CyberEnergy.Repository
         }
         private static UnosPodataka CreateObject(SqlDataReader reader)
         {
-            int NazivZgrade = int.Parse(reader["NazivZgrade"].ToString());
+
+            int id = int.Parse(reader["Id_UnosaPodataka"].ToString());
+
+            int  NazivZgrade = int.Parse(reader["Id_UnosaPodataka"].ToString());
             var nazivzgrade = RepositoryZgrade.GetZgrade(NazivZgrade);
-
-
-            //int Id_Korisnika = int.Parse(reader["Id_Korisnika"].ToString());
-            //var korisnik = RepositoryKorisnika.GetKorisnik(Id_Korisnika);
-
-            int  Naziv_Mjerne_Jedinice = int.Parse(reader["Naziv_Mjerne_Jedinice"].ToString());
+            int  Naziv_Mjerne_Jedinice = int.Parse(reader["Id_UnosaPodataka"].ToString());
             var mjernajedinica = RepositoryMjerneJedinice.GetMjernaJedinica(Naziv_Mjerne_Jedinice);
-
-            int Id_VrstePotrosnje = int.Parse(reader["Vrsta_Potrosnje"].ToString());
+            int Id_VrstePotrosnje = int.Parse(reader["Id_UnosaPodataka"].ToString());
             var NazivPotrosnje = RepositoryVrstaEnergije.GetEnergija(Id_VrstePotrosnje);
-
-            int UkupnaKolicina = int.Parse(reader["UkupnaKolicina"].ToString());
+            int UkupnaKolicina = int.Parse(reader["Id_UnosaPodataka"].ToString());
             var ukupnakolicina = RepositoryKolicine.GetKolicina(UkupnaKolicina);
 
             var unospodataka = new UnosPodataka { 
+            Id_UnosaPodataka = id,
             Zgrade = nazivzgrade,
-           // Korisnik = korisnik,
             MjernaJedinica = mjernajedinica,
             VrstaEnergije = NazivPotrosnje,
             Kolicina = ukupnakolicina
-            
-            
             };
             return unospodataka;
 
 
         }
-        public static void InsertUnosa(Korisnik korisnik, Zgrade zgrade,MjernaJedinica mjernajedinica, VrstaEnergije vrstaenergije)
+        public static void InsertUnosa(Zgrade zgrade,MjernaJedinica mjernajedinica, VrstaEnergije vrstaenergije, Kolicina kolicina)
         {
-            string sql = $"INSERT INTO UnosPodataka (NazivZgrade,Naziv_Mjerne_Jedinice,Vrsta_Potrosnje) VALUES ('{zgrade.Naziv_Zgrade}','{mjernajedinica.Naziv_Mjerne_Jedinice}','{vrstaenergije.Naziv_Vrste_Potrosnje}')";
+            string sql = $"INSERT INTO UnosPodataka (NazivZgrade,Naziv_Mjerne_Jedinice,Vrsta_Potrosnje,Kolicina) VALUES ('{zgrade.Naziv_Zgrade}','{mjernajedinica.Naziv_Mjerne_Jedinice}','{vrstaenergije.Naziv_Vrste_Potrosnje}','{kolicina.UkupnaKolicina})";
             DB.OpenConnection();
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
         
-        public static void UpdateUnosaPodataka(Zgrade zgrade, VrstaEnergije vrstaenergije,MjernaJedinica mjernajedinice,int Id)
+        public static void UpdateUnosaPodataka(Zgrade zgrade, VrstaEnergije vrstaenergije,MjernaJedinica mjernajedinice, int id)
         {
-            string sql = $"UPDATE UnosPodataka SET NazivZgrade = '{zgrade.Naziv_Zgrade}', Naziv_Mjerne_Jedinice = '{mjernajedinice.Naziv_Mjerne_Jedinice}', Vrsta_Potrosnje = '{vrstaenergije.Naziv_Vrste_Potrosnje}' WHERE Id = {Id}";
+         
+            string sql = $"UPDATE UnosPodataka SET NazivZgrade = '{zgrade.Naziv_Zgrade}', Naziv_Mjerne_Jedinice = '{mjernajedinice.Naziv_Mjerne_Jedinice}', Vrsta_Potrosnje = '{vrstaenergije.Naziv_Vrste_Potrosnje}' WHERE Id_UnosaPodataka = {id}";
             DB.OpenConnection();
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
+        }
+        public static void DeleteUnosaPodataka(int id)
+        {
+            string sql = $"DELETE FROM UnosaPodataka WHERE Id_UnosaPodataka = {id} ";
         }
         
     }

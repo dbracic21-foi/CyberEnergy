@@ -82,13 +82,14 @@ namespace CyberEnergy
           var mjernajedinica = cmbMjerna.SelectedItem as MjernaJedinica;
             var zgrade = cmbZgrade.SelectedItem as Zgrade;
             var vrstaenergije = cmbVrste.SelectedItem as VrstaEnergije;
-            var korisnik = frmPrijava.LoggedKorisnik;
-
+            Kolicina kolicina = new Kolicina();
+            kolicina.UkupnaKolicina = txtKolicine.Text;
+           
 
 
             //var unosPodatak = RepositoryUnosaPodataka.GetUnosPodataka(korisnik, zgrade);
 
-            RepositoryUnosaPodataka.InsertUnosa(korisnik, zgrade, mjernajedinica, vrstaenergije);
+            RepositoryUnosaPodataka.InsertUnosa(zgrade, mjernajedinica, vrstaenergije,kolicina);
                 MessageBox.Show("Pritisnut");
      
         }

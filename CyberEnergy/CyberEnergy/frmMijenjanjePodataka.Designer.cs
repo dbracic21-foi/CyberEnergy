@@ -43,7 +43,7 @@
             this.btnSpremi = new System.Windows.Forms.Button();
             this.btnOdustani = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbOdabir = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -175,14 +175,14 @@
             this.textBox1.Size = new System.Drawing.Size(735, 156);
             this.textBox1.TabIndex = 16;
             // 
-            // comboBox1
+            // cmbOdabir
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(36, 366);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 31;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbOdabir.FormattingEnabled = true;
+            this.cmbOdabir.Location = new System.Drawing.Point(36, 366);
+            this.cmbOdabir.Name = "cmbOdabir";
+            this.cmbOdabir.Size = new System.Drawing.Size(121, 21);
+            this.cmbOdabir.TabIndex = 31;
+            this.cmbOdabir.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -200,7 +200,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbOdabir);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cmbMjerna);
             this.Controls.Add(this.label6);
@@ -241,7 +241,7 @@
         private System.Windows.Forms.Button btnSpremi;
         private System.Windows.Forms.Button btnOdustani;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbOdabir;
         private System.Windows.Forms.Label label3;
     }
 }

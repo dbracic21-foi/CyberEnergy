@@ -8,6 +8,7 @@ namespace CyberEnergy.Models
 {
     public class UnosPodataka
     {
+        public int Id_UnosaPodataka { get; set; }   
         public Korisnik Korisnik { get; set; }
         public Zgrade Zgrade { get; set; }
         public MjernaJedinica MjernaJedinica { get; set; }
@@ -15,6 +16,12 @@ namespace CyberEnergy.Models
         
         public Kolicina Kolicina { get; set; }
 
-     
+
+        public override string ToString()
+        {
+            return Id_UnosaPodataka.ToString();
+        }
+
+
     }
 }

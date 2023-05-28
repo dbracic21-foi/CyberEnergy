@@ -14,3 +14,4 @@ C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\
 C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.frmPregledPodataka.resources
 C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.frmUnosPodataka.resources
 C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.frmMijenjanjePodataka.resources
+C:\Users\bario\source\repos\pi2023-zadace-dbracic21-foi\CyberEnergy\CyberEnergy\obj\Debug\CyberEnergy.frmBrisanje.resources
