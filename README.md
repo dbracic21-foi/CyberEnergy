@@ -35,3 +35,13 @@ Zahtjevi su :
 (Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete koristiti na wiki stranicama smjestite u mapu dokumentacije u repozitoriju!)
 
 Svi resursi nalaze se u mapi _Documentation_.
+**Za zadaču 3 pristupni podaci su:**
+**Za administratora:**
+Korisničko ime: Administrator
+Lozinka:123
+**Za Upravitelja objekta:**
+Korisničko ime:Upravitelj
+Lozinka:456
+**Za Kučepazitelja**
+Korisničko ime:Kucepazitelj
+Lozinka:789
